@@ -1,0 +1,145 @@
+body {
+  min-height: 100vh;
+  font-family: "Spartan", sans-serif;
+
+  background-color: var(--color-main-background);
+  
+  transition: all 0.3s ease-in-out;
+}
+:root {
+  --size-font-visor: 48px;
+  --size-font-btn: 32px;
+  --size-font-del: 20px;
+  --gap-grid-calc: 24px;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+}
+.calculator {
+  max-width: 550px;
+}
+.calc-header {
+  color: var(--color-text-header);
+}
+.header-title {
+  font-size: 2rem;
+}
+.theme-font {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.theme-numbers {
+  padding: 0 9px;
+}
+.theme-container {
+  height: 26px;
+  width: 72px;
+  padding: 4px;
+  border-radius: 13px;
+}
+.calc-visor,
+.theme-container {
+  background-color: var(--color-keypad-background);
+}
+.theme-selector {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+
+  position: relative;
+  background-color: var(--color-key-eq);
+}
+.theme-position-1 {
+  left: 0;
+}
+.theme-position-2 {
+  left: 22px;
+}
+.theme-position-3 {
+  left: 44px;
+}
+
+.calc-visor {
+  height: 128px;
+  padding: 2rem;
+  border-radius: 7px;
+  font-size: var(--size-font-visor);
+  text-align: end;
+  overflow: hidden;
+
+  color: var(--color-text-light);
+}
+
+.calc-container-buttons {
+  padding: 2rem;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: var(--gap-grid-calc);
+
+  background-color: var(--color-keypad-background);
+}
+
+.calc-btn {
+  min-width: 100px;
+  height: 64px;
+  align-items: center;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: var(--size-font-btn);
+
+  color: var(--color-text-dark);
+  background-color: var(--color-key);
+  box-shadow: 0px 5px 0px 0px var(--color-key-shadow);
+}
+
+.btn-del,
+.btn-reset {
+  font-size: var(--size-font-del);
+  color: var(--color-text-light);
+}
+.btn-del,
+.btn-reset {
+  background-color: var(--color-key-del);
+  box-shadow: 0px 5px 0px 0px var(--color-key-del-shadow);
+}
+.btn-equal {
+  color: var(--color-text-eq);
+  background-color: var(--color-key-eq);
+  box-shadow: 0px 5px 0px 0px var(--color-key-eq-shadow);
+}
+.btn-reset {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.btn-equal {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+/*Para mobile*/
+@media (max-width: 992px) {
+  :root {
+    --size-font-visor: 32px;
+    --size-font-btn: 24px;
+    --size-font-del: 16px;
+    --gap-grid-calc: 13px;
+  }
+  .calculator {
+    max-width: 328px;
+  }
+  .calc-visor {
+    height: 90px;
+    padding: 24px;
+  }
+  .calc-container-buttons {
+    padding: 24px;
+  }
+  .calc-btn {
+    min-width: 60px;
+  }
+}

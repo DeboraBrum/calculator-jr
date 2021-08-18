@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Styles-->
+    <link href="./css/layout.css" rel="stylesheet" />
+    <link href="./css/spacing.css" rel="stylesheet" />
+    <link href="./css/theme.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <!--Script-->
+    <script src="./main.js" defer></script>
+  </head>
+  <body class="flex-column align-center justify-center theme-1">
+    <main class="calculator flex-column">
+      <div class="calc-header flex-row justify-between mb-2">
+        <span class="header-title">calc</span>
+        <div class="calc-header-theme flex-row align-bottom gap-16">
+          <span class="theme-font">THEME</span>
+          <div class="flex-column">
+            <div class="theme-numbers flex-row gap-16">
+              <span class="theme-font">1</span>
+              <span class="theme-font">2</span>
+              <span class="theme-font">3</span>
+            </div>
+            <div class="theme-container">
+              <div class="theme-selector"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="calc-visor mb-2"></div>
+
+      <div class="calc-container-buttons">
+        <button class="calc-btn" data-value="7">7</button>
+        <button class="calc-btn" data-value="8">8</button>
+        <button class="calc-btn" data-value="9">9</button>
+        <button class="calc-btn btn-del" data-value="del">DEL</button>
+        <button class="calc-btn" data-value="4">4</button>
+        <button class="calc-btn" data-value="5">5</button>
+        <button class="calc-btn" data-value="6">6</button>
+        <button class="calc-btn" data-value="sum">+</button>
+        <button class="calc-btn" data-value="1">1</button>
+        <button class="calc-btn" data-value="2">2</button>
+        <button class="calc-btn" data-value="3">3</button>
+        <button class="calc-btn" data-value="subt">-</button>
+        <button class="calc-btn" data-value=".">.</button>
+        <button class="calc-btn" data-value="0">0</button>
+        <button class="calc-btn" data-value="divis">/</button>
+        <button class="calc-btn" data-value="mult">x</button>
+        <button class="calc-btn btn-reset" data-value="reset">RESET</button>
+        <button class="calc-btn btn-equal" data-value="eq">=</button>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </footer>
+  </body>
+</html>

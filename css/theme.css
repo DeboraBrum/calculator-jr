@@ -1,0 +1,45 @@
+.theme-1{
+  --color-main-background: hsl(222, 26%, 31%);
+  --color-keypad-background: hsl(223, 31%, 20%);
+  --color-screen-background: hsl(224, 36%, 15%);
+  --color-key-del: hsl(225, 21%, 49%);
+  --color-key-del-shadow: hsl(224, 28%, 35%);
+  --color-key-eq: hsl(6, 63%, 50%);
+  --color-key-eq-shadow: hsl(6, 70%, 34%);
+  --color-key: hsl(30, 25%, 89%);
+  --color-key-shadow: hsl(28, 16%, 65%);
+  --color-text-dark: hsl(221, 14%, 31%);
+  --color-text-light: white;
+  --color-text-header: white;
+  --color-text-eq: white;
+}
+.theme-2{
+  --color-main-background: hsl(0, 0%, 90%);
+  --color-keypad-background: hsl(0, 5%, 81%);
+  --color-screen-background: hsl(0, 0%, 93%);
+  --color-key-del: hsl(185, 42%, 37%);
+  --color-key-del-shadow: hsl(185, 58%, 25%);
+  --color-key-eq: hsl(25, 98%, 40%);
+  --color-key-eq-shadow: hsl(25, 99%, 27%);
+  --color-key: hsl(45, 7%, 89%);
+  --color-key-shadow: hsl(35, 11%, 61%);
+  --color-text-dark: hsl(60, 10%, 19%);
+  --color-text-light: white;
+  --color-text-header: hsl(60, 10%, 19%);
+  --color-text-eq: white;
+}
+.theme-3{
+  --color-main-background: hsl(268, 75%, 9%);
+  --color-keypad-background: hsl(268, 71%, 12%);
+  --color-screen-background: hsl(268, 71%, 12%);
+  --color-key-del: hsl(281, 89%, 26%);
+  --color-key-del-shadow: hsl(285, 91%, 52%);
+  --color-key-eq: hsl(176, 100%, 44%);
+  --color-key-eq-shadow: hsl(177, 92%, 70%);
+  --color-key: hsl(268, 47%, 21%);
+  --color-key-shadow:  hsl(290, 70%, 36%);
+  --color-text-dark: hsl(52, 100%, 62%);
+  --color-text-light: white;
+  --color-text-header: hsl(52, 100%, 62%);
+  --color-text-eq: hsl(198, 20%, 13%);
+}
