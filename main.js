@@ -8,41 +8,23 @@ let firstOp = 0,
   op,
   finished = false;
 
+const initialTheme = localStorage.getItem("theme");
+
+if (initialTheme) {
+  if (initialTheme === "1") {
+    putTheme1();
+  } else if (initialTheme === "2") {
+    putTheme2();
+  } else {
+    putTheme3();
+  }
+}
+
+themeSelector.addEventListener("click", changeTheme);
+
 for (const item of buttons) {
   item.addEventListener("click", addVisor);
 }
-if (body.classList.contains("theme-1")) {
-  themeSelector.classList.remove("theme-position-2");
-  themeSelector.classList.remove("theme-position-3");
-  themeSelector.classList.add("theme-position-1");
-}
-
-themeSelector.addEventListener("click", function () {
-  if (body.classList.contains("theme-1")) {
-    themeSelector.classList.remove("theme-position-1");
-    themeSelector.classList.remove("theme-position-3");
-    themeSelector.classList.add("theme-position-2");
-    body.classList.remove("theme-1");
-    body.classList.remove("theme-3");
-    body.classList.add("theme-2");
-  } else if(body.classList.contains("theme-2")){
-    themeSelector.classList.remove("theme-position-1");
-    themeSelector.classList.remove("theme-position-2");
-    themeSelector.classList.add("theme-position-3");
-    body.classList.remove("theme-1");
-    body.classList.remove("theme-2");
-    body.classList.add("theme-3");
-  } else{
-    themeSelector.classList.remove("theme-position-3");
-    themeSelector.classList.remove("theme-position-2");
-    themeSelector.classList.add("theme-position-1");
-    body.classList.remove("theme-3");
-    body.classList.remove("theme-2");
-    body.classList.add("theme-1");
-  }
-
-});
-
 function addVisor(event) {
   if (event.target.dataset.value === "del") {
     if (finished) {
@@ -116,4 +98,34 @@ function zerar() {
 }
 function zerarTela() {
   visor.textContent = "";
+}
+function changeTheme() {
+  if (body.classList.contains("theme-1")) {
+    putTheme2();
+  } else if (body.classList.contains("theme-2")) {
+    putTheme3();
+  } else {
+    putTheme1();
+  }
+}
+function putTheme1() {
+  themeSelector.style.left = "0";
+  body.classList.remove("theme-3");
+  body.classList.remove("theme-2");
+  body.classList.add("theme-1");
+  localStorage.setItem("theme", "1");
+}
+function putTheme2() {
+  themeSelector.style.left = "22px";
+  body.classList.remove("theme-1");
+  body.classList.remove("theme-3");
+  body.classList.add("theme-2");
+  localStorage.setItem("theme", "2");
+}
+function putTheme3() {
+  themeSelector.style.left = "44px";
+  body.classList.remove("theme-1");
+  body.classList.remove("theme-2");
+  body.classList.add("theme-3");
+  localStorage.setItem("theme", "3");
 }

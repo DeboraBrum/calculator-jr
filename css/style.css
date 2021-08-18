@@ -50,15 +50,6 @@ footer {
   position: relative;
   background-color: var(--color-key-eq);
 }
-.theme-position-1 {
-  left: 0;
-}
-.theme-position-2 {
-  left: 22px;
-}
-.theme-position-3 {
-  left: 44px;
-}
 
 .calc-visor {
   height: 128px;
