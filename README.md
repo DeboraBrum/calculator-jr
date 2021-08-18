@@ -6,7 +6,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 
 ### Design
 
-![Design preview for the Blogr landing page coding challenge]("./design/desktop-preview.jpg)
+![Design preview for the Blogr landing page coding challenge]("./design/desktop-preview.jpg")
 
 ### Links
 
