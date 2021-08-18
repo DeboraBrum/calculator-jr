@@ -10,7 +10,7 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 
 ### Links
 
-- Solution URL: [Acess here](https://deborabrum.github.io/first-calculator/)
+- Solution URL: [Acess here](https://deborabrum.github.io/calculator-jr/)
 
 ### Built with
 
