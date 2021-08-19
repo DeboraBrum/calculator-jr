@@ -8,7 +8,14 @@ let firstOp = 0,
   op,
   finished = false;
 
-const initialTheme = localStorage.getItem("theme");
+const preferenceTheme = window.matchMedia('(prefers-color-scheme: dark)');
+let initialTheme = localStorage.getItem("theme");
+
+if(preferenceTheme.matches){
+  initialTheme = "3";
+} else{
+  initialTheme = "2";
+}
 
 if (initialTheme) {
   if (initialTheme === "1") {
@@ -37,7 +44,6 @@ function addVisor(event) {
     );
     return;
   }
-
   finished = false;
 
   if (event.target.dataset.value === "reset") {

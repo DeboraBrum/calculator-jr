@@ -59,7 +59,7 @@ footer {
   text-align: end;
   overflow: hidden;
 
-  color: var(--color-text-light);
+  color: var(--color-text-header);
 }
 
 .calc-container-buttons {
